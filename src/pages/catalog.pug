@@ -1,0 +1,13 @@
+extends common/layout
+
+block variables
+  -var page = 'Каталог'
+  -var navigation = [{name: 'Студия', link: 'studio.html'}, {name: 'Клиенты', link: 'clients.html'}, {name: 'Магазин', link: 'catalog.html', active: true}, {name: 'Контакты', link: 'contacts.html'}];
+
+block content
+    main.main
+        h1 Title
+        hr
+        include includes/catalog/company-info
+        hr
+        //- и другие блоки

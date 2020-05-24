@@ -1,2 +1,21 @@
-header
-  p Header
+mixin navigation(navigation)
+  ul.header__menu(class="main-menu")
+    each item in navigation
+      if item.active
+        li.main-menu__item
+          a.main-menu__link.main-menu__link--active #{item.name}
+      else
+        li.main-menu__item
+          a.main-menu__link(href="" +item.link) #{item.name}
+
+      //- li.main-menu__item
+      //-   a.main-menu__link(href="catalog.html") Магазин
+      //- li.main-menu__item
+      //-   a.main-menu__link(href="contacts.html") Контакты
+
+header.header
+  nav.header__nav
+    a.header__logo(class="logo" href="#")
+      img(class="logo__img" src="https://placehold.it/160x65" width="160" height="65" alt="Логотип магазина 'Нёрдс'")
+    +navigation(navigation)
+    a.header__button(href="cart.html") Корзина
