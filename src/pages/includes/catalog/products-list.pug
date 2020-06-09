@@ -1,0 +1,22 @@
+- var productsObj = [{src: 'product-1.jpg', alt: 'Седона', title: 'Sedona', description: 'Информационный сайт для туристов', price: '9 900 ₽'}, {src: 'product-2.jpg', alt: 'Седона', title: 'Sedona', description: 'Информационный сайт для туристов', price: '9 900 ₽'}];
+
+mixin list-item(product)
+  li.products-list__item.product-card
+    .product-card__deco
+    .product-card__img-wrapper
+      img.product-card__img(src="https://placehold.it/360x580", alt="Изображение сайта #{product.alt}.")
+    .product-card__info
+      h3.product-card__title
+        a(href="") #{product.title}
+      p.product-card__description #{product.description}
+      a.product-card__price(href="") #{product.price}
+
+.products__list-wrapper
+  ul.products__list.products-list
+    each product in productsObj
+      +list-item(product)
+  ul.products__pagination.pagination
+    li.pagination__item 1
+    li.pagination__item 2
+    li.pagination__item 3
+    li.pagination__item Следующая

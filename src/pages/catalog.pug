@@ -4,9 +4,15 @@ block variables
   -var page = 'Каталог'
 
 block content
-    main.main
-        h1 Title
-        hr
-        include includes/catalog/company-info
-        hr
-        //- и другие блоки
+    main.catalog
+      .catalog__top
+        .catalog__top-container.container
+          h1.catalog__title Магазин готовых шаблонов
+      .catalog__grid
+        include includes/catalog/filter
+
+        section.products
+          h2.visually-hidden Каталог
+
+          include includes/catalog/sorting
+          include includes/catalog/products-list
