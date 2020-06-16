@@ -1,7 +1,7 @@
 section.filter
   h2.visually-hidden Фильтр товаров
 
-  form.filter__form.main-form(action="#")
+  form.filter__form.main-form(action="https://echo.htmlacademy.ru/")
     fieldset.main-form__cost.form-cost
       legend.form-cost__title Стоимость:
       .form-cost__range-wrapper
@@ -11,39 +11,39 @@ section.filter
       .form-cost__inputs
         p
           label(for="min") От
-          input#min(type="number", name="min")
+          input#min(type="number" name="min")
         p
           label(for="max") До
-          input#max(type="number", name="max")
+          input#max(type="number" name="max")
     fieldset.main-form__grid.form-grid
       legend.form-grid__title Сетка:
       ul.form-grid__list
         li.form-grid__item
-          input#adaptive(type="radio", name="grid" checked)
+          input#adaptive(type="radio" name="grid" checked)
           label(for="adaptive") Адаптивная
         li.form-grid__item
-          input#fixed(type="radio", name="grid")
+          input#fixed(type="radio" name="grid")
           label(for="fixed") Фиксированная
         li.form-grid__item
-          input#responsive(type="radio", name="grid")
+          input#responsive(type="radio" name="grid")
           label(for="responsive") Резиновая
     fieldset.main-form__features.form-features
       legend.form-features__title Особенности:
       ul.form-features__list
         li.form-features__item
-          input#slider(type="checkbox", name="slider" checked)
+          input#slider(type="checkbox" name="slider" checked)
           label(for="slider") Адаптивная
         li.form-features__item
-          input#advantages(type="checkbox", name="advantages")
+          input#advantages(type="checkbox" name="advantages")
           label(for="advantages") Фиксированная
         li.form-features__item
-          input#news(type="checkbox", name="news" checked)
+          input#news(type="checkbox" name="news" checked)
           label(for="news") Резиновая
         li.form-features__item
-          input#gallery(type="checkbox", name="gallery")
+          input#gallery(type="checkbox" name="gallery")
           label(for="gallery") Фиксированная
         li.form-features__item
-          input#cart(type="checkbox", name="cart")
+          input#cart(type="checkbox" name="cart")
           label(for="cart") Резиновая
 
     button(type="submit") Отправить

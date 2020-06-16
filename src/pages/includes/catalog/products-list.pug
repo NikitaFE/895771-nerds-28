@@ -1,10 +1,10 @@
-- var productsObj = [{src: 'product-1.jpg', alt: 'Седона', title: 'Sedona', description: 'Информационный сайт для туристов', price: '9 900 ₽'}, {src: 'product-2.jpg', alt: 'Седона', title: 'Sedona', description: 'Информационный сайт для туристов', price: '9 900 ₽'}];
+- var productsObj = [{src: 'product-1.jpg', alt: 'Седона', title: 'Sedona', description: 'Информационный сайт для туристов', price: '9 900 ₽'}, {src: 'product-2.jpg', alt: 'Пинк', title: 'Pink App', description: 'Продуктовый лендинг приложения для iOS и Android', price: '9 900 ₽'}, {src: 'product-3.jpg', alt: 'Барбершоп', title: 'Barbershop', description: 'Сайт салона красоты. Для мужчин, да.', price: '9 900 ₽'}, {src: 'product-4.jpg', alt: 'Мишка', title: 'Mishka', description: 'Интернет-магазин вязаных игрушек', price: '9 900 ₽'}];
 
 mixin list-item(product)
   li.products-list__item.product-card
     .product-card__deco
     .product-card__img-wrapper
-      img.product-card__img(src="https://placehold.it/360x580", alt="Изображение сайта #{product.alt}.")
+      img.product-card__img(src="img/" +product.src, alt="Изображение сайта " +product.alt)
     .product-card__info
       h3.product-card__title
         a(href="") #{product.title}
