@@ -1,0 +1,17 @@
+section.popup
+  .popup__wrapper
+    h2.popup__title Напишите нам
+    form.popup__form(action="#")
+      .popup__form-top
+        p.popup__filed-wrapper
+          label.popup__label(for="user-name") Ваше имя:
+          input.popup__input(id="user-name" type="text" placeholder="Имя Фамилия")
+        p.popup__filed-wrapper
+          label.popup__label(for="user-email") Ваш email:
+          input.popup__input(id="user-email" type="email" placeholder="email@example.com")
+        p.popup__filed-wrapper
+          label.popup__label(for="user-msg") Текст письма:
+          textarea.popup__input.popup__input--textarea(id="user-msg" placeholder="В свободной форме")
+      button.popup__submit(type="submit") Отправить
+      button.popup__close(type="button")
+        span.visually-hidden Закрыть.
