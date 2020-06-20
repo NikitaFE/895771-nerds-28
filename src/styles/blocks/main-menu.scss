@@ -1,0 +1,9 @@
+.main-menu {
+  @include reset-list;
+}
+
+.main-menu__link {
+  @include font-sans('m', 16px, 30px, $black);
+
+  text-transform: uppercase;
+}

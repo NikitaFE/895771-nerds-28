@@ -1,0 +1,14 @@
+.hero-text__title {
+  @include font-sans('m', 55px, 55px, $black);
+
+  margin: 0;
+  padding: 0;
+}
+
+.hero-text__subtitle {
+  @include font-sans('r', 16px, 24px, $dark);
+
+  margin: 0;
+  padding: 0;
+}
+

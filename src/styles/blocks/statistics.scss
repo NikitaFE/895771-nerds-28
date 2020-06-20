@@ -1,0 +1,24 @@
+.statistics__text {
+  @include font-sans('b', 16px, 24px, $black);
+
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+}
+
+.statistics__list {
+  @include reset-list;
+}
+
+.statistics__value {
+  @include font-sans('b', 45px, 64px, $black);
+}
+
+.statistics__percent {
+  @include font-sans('b', 26px, 40px, $black);
+}
+
+.statistics__name {
+  @include font-sans('r', 16px, 18px, $dark);
+}

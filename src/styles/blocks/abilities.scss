@@ -1,0 +1,16 @@
+.abilities__title {
+  @include font-sans('b', 16px, 24px, $dark);
+
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+}
+
+.abilities__list {
+  @include reset-list;
+}
+
+.abilities__item {
+  @include font-sans('r', 16px, 24px, $dark);
+}

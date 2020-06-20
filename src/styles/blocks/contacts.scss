@@ -1,0 +1,25 @@
+.contacts__map {
+  display: block;
+
+  background-color: $map-gray;
+}
+
+.contacts__info-title {
+  @include font-sans('b', 18px, 30px, $black);
+
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+}
+
+.contacts__data {
+  @include font-sans('r', 16px, 18px, $gray);
+
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__tel {
+  @include font-sans('r', 16px, 18px, $gray);
+}

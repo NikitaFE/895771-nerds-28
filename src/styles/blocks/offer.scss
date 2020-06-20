@@ -1,0 +1,13 @@
+.offer__text-bold {
+  @include font-sans('b', 36px, 36px, $black);
+
+  margin: 0;
+  padding: 0;
+}
+
+.offer__text {
+  @include font-sans('r', 16px, 22px, $dark-gray);
+
+  margin: 0;
+  padding: 0;
+}

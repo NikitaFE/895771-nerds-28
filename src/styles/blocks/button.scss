@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  padding: 17px 20px 15px;
+
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 3px;
+
+  &--red {
+    @include font-sans('m', 16px, 18px, $white);
+    background-color: $red;
+  }
+
+  &--green {
+    @include font-sans('m', 16px, 18px, $white);
+    background-color: $green;
+  }
+
+  &--yellow {
+    @include font-sans('m', 16px, 18px, $white);
+    background-color: $yellow;
+  }
+}
