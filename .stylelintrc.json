@@ -3,18 +3,17 @@
     "stylelint-scss"
   ],
   "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-standard-scss",
     "stylelint-config-htmlacademy"
   ],
   "rules": {
-    "indentation": 4,
+    "indentation": 2,
     "at-rule-no-vendor-prefix": true,
+    "at-rule-no-unknown": [true, {"ignoreAtRules": ["@if", "@else"]}],
     "at-rule-empty-line-before": "never",
     "scss/selector-no-redundant-nesting-selector": true,
     "scss/at-import-partial-extension": "never",
-    "block-closing-brace-newline-before": "always",
-    "block-closing-brace-newline-after": "always",
+    "block-closing-brace-newline-before": "always-multi-line",
+    "block-closing-brace-newline-after": "always-multi-line",
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
     "at-rule-semicolon-newline-after": "always",

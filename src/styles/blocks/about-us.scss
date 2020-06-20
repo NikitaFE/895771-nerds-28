@@ -1,12 +1,12 @@
 .about-us__title {
-  @include font-sans('m', 45px, 45px, $black);
+  @include font-sans("m", 45px, 45px, $black);
 
   margin: 0;
   padding: 0;
 }
 
 .about-us__text {
-  @include font-sans('r', 16px, 24px, $dark);
+  @include font-sans("r", 16px, 24px, $dark);
 
   margin: 0;
   padding: 0;

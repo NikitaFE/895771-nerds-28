@@ -1,5 +1,5 @@
 .header__button {
-  @include font-sans('m', 16px, 30px, $black);
+  @include font-sans("m", 16px, 30px, $black);
 
   text-transform: uppercase;
 }

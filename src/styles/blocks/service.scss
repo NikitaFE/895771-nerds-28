@@ -1,5 +1,5 @@
 .service__title {
-  @include font-sans('b', 24px, 30px, $black);
+  @include font-sans("b", 24px, 30px, $black);
 
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 }
 
 .service__text {
-  @include font-sans('r', 16px, 24px, $dark);
+  @include font-sans("r", 16px, 24px, $dark);
 
   margin: 0;
   padding: 0;

@@ -5,7 +5,7 @@
 }
 
 .contacts__info-title {
-  @include font-sans('b', 18px, 30px, $black);
+  @include font-sans("b", 18px, 30px, $black);
 
   margin: 0;
   padding: 0;
@@ -14,12 +14,12 @@
 }
 
 .contacts__data {
-  @include font-sans('r', 16px, 18px, $gray);
+  @include font-sans("r", 16px, 18px, $gray);
 
   margin: 0;
   padding: 0;
 }
 
 .contacts__tel {
-  @include font-sans('r', 16px, 18px, $gray);
+  @include font-sans("r", 16px, 18px, $gray);
 }

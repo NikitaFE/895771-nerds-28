@@ -1,24 +1,28 @@
+// reg
 @font-face {
   font-family: "Roboto_Regular";
-  src: url("../fonts/roboto.woff2") format("woff2"),
+  src:
+    url("../fonts/roboto.woff2") format("woff2"),
     url("../fonts/roboto.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
+// med
 @font-face {
   font-family: "Roboto_Medium";
-  src: url("../fonts/robotomedium.woff2") format("woff2"),
+  src:
+    url("../fonts/robotomedium.woff2") format("woff2"),
     url("../fonts/robotomedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-
+// bold
 @font-face {
   font-family: "Roboto_Bold";
-  src: url("../fonts/romotobold.woff2") format("woff2"),
+  src:
+    url("../fonts/romotobold.woff2") format("woff2"),
     url("../fonts/romotobold.woff") format("woff");
   font-weight: 700;
   font-style: normal;

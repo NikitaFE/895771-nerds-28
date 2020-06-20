@@ -11,17 +11,20 @@
   border-radius: 3px;
 
   &--red {
-    @include font-sans('m', 16px, 18px, $white);
+    @include font-sans("m", 16px, 18px, $white);
+
     background-color: $red;
   }
 
   &--green {
-    @include font-sans('m', 16px, 18px, $white);
+    @include font-sans("m", 16px, 18px, $white);
+
     background-color: $green;
   }
 
   &--yellow {
-    @include font-sans('m', 16px, 18px, $white);
+    @include font-sans("m", 16px, 18px, $white);
+
     background-color: $yellow;
   }
 }

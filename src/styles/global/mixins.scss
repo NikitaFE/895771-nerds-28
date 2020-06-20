@@ -4,20 +4,27 @@
 
   list-style: none;
 }
-
+// font options
 @mixin font-sans($font-family: false, $size: false, $lh: false, $colour: false) {
-  @if($font-family == 'm') {
-    font-family: 'Roboto_Medium', Helvetica, Arial, sans-serif;
+  @if ($font-family == "m") {
+    font-family: "Roboto_Medium", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
-  } @else if ($font-family == 'b') {
-    font-family: 'Roboto_Bold', Helvetica, Arial, sans-serif;
+  }
+  @else if ($font-family == "b") {
+    font-family: "Roboto_Bold", "Helvetica", "Arial", sans-serif;
     font-weight: 700;
-  } @else {
-    font-family: 'Roboto_Regular', Helvetica, Arial, sans-serif;
+  }
+  @else {
+    font-family: "Roboto_Regular", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
   }
-
-  @if $size { font-size: $size; }
-  @if $colour { color: $colour; }
-  @if $lh { line-height: $lh; }
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
 }
