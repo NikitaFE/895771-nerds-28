@@ -19,14 +19,14 @@ section.filter
       legend.form-grid__title Сетка:
       ul.form-grid__list
         li.form-grid__item
-          input#adaptive(type="radio" name="grid" checked)
-          label(for="adaptive") Адаптивная
+          input#adaptive.form-grid__input(type="radio" name="grid" checked)
+          label.form-grid__label(for="adaptive") Адаптивная
         li.form-grid__item
-          input#fixed(type="radio" name="grid")
-          label(for="fixed") Фиксированная
+          input#fixed.form-grid__input(type="radio" name="grid")
+          label.form-grid__label(for="fixed") Фиксированная
         li.form-grid__item
-          input#responsive(type="radio" name="grid")
-          label(for="responsive") Резиновая
+          input#responsive.form-grid__input(type="radio" name="grid")
+          label.form-grid__label(for="responsive") Резиновая
     fieldset.main-form__features.form-features
       legend.form-features__title Особенности:
       ul.form-features__list
@@ -46,5 +46,5 @@ section.filter
           input#cart(type="checkbox" name="cart")
           label(for="cart") Резиновая
 
-    button(type="submit") Отправить
+    button.main-form__submit.button.button--gray(type="submit") Показать
 

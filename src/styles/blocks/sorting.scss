@@ -1,0 +1,24 @@
+.sorting__title {
+  @include font-sans("b", 18px, 30px, $black);
+
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+}
+
+.sorting__list {
+  @include reset-list;
+}
+
+.sorting__link {
+  @include font-sans("r", 14px, 18px, $black);
+
+  text-transform: uppercase;
+
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
+}

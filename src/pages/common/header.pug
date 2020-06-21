@@ -4,11 +4,11 @@ header.header
       img(class="logo__img" src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип магазина 'Нёрдс'")
     ul.header__menu.main-menu
       li.main-menu__item
-        a.main-menu__link(href="studio.html") Студия
+        a.main-menu__link(href="studio.html" class=(page.name === "studio" ? "main-menu__link--active" : undefined)) Студия
       li.main-menu__item
-        a.main-menu__link(href="clients.html") Клиенты
+        a.main-menu__link(href="clients.html" class=(page.name === "clients" ? "main-menu__link--active" : undefined)) Клиенты
       li.main-menu__item
-        a.main-menu__link(href="catalog.html") Магазин
+        a.main-menu__link(href="catalog.html" class=(page.name === "catalog" ? "main-menu__link--active" : undefined)) Магазин
       li.main-menu__item
-        a.main-menu__link(href="contacts.html") Контакты
+        a.main-menu__link(href="contacts.html" class=(page.name === "contacts" ? "main-menu__link--active" : undefined)) Контакты
     a.header__button(href="cart.html") Корзина

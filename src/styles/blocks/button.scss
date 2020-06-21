@@ -27,4 +27,10 @@
 
     background-color: $yellow;
   }
+
+  &--gray {
+    @include font-sans("m", 16px, 18px, $black);
+
+    background-color: $bg-gray;
+  }
 }

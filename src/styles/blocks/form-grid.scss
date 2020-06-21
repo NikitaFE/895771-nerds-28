@@ -1,0 +1,17 @@
+.form-grid {
+  @include reset-fieldset;
+}
+
+.form-grid__title {
+  @include font-sans("b", 18px, 30px, $black);
+
+  text-transform: uppercase;
+}
+
+.form-grid__list {
+  @include reset-list;
+}
+
+.form-grid__label {
+  @include font-sans("r", 16px, 19px, $dark);
+}

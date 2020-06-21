@@ -1,0 +1,9 @@
+.form-cost {
+  @include reset-fieldset;
+}
+
+.form-cost__title {
+  @include font-sans("b", 18px, 30px, $black);
+
+  text-transform: uppercase;
+}

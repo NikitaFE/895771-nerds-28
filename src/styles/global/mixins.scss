@@ -4,6 +4,13 @@
 
   list-style: none;
 }
+
+@mixin reset-fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
 // font options
 @mixin font-sans($font-family: false, $size: false, $lh: false, $colour: false) {
   @if ($font-family == "m") {
@@ -18,13 +25,8 @@
     font-family: "Roboto_Regular", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
   }
-  @if $size {
-    font-size: $size;
-  }
-  @if $colour {
-    color: $colour;
-  }
-  @if $lh {
-    line-height: $lh;
-  }
+
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $lh { line-height: $lh; }
 }

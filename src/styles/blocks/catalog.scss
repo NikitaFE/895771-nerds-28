@@ -1,0 +1,10 @@
+.catalog__top {
+  background-color: $bg-gray;
+}
+
+.catalog__title {
+  @include font-sans("m", 55px, 55px, $black);
+
+  margin: 0;
+  padding: 0;
+}

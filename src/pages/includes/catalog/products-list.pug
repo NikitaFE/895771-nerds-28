@@ -7,16 +7,20 @@ mixin list-item(product)
       img.product-card__img(src="img/" +product.src, alt="Изображение сайта " +product.alt)
     .product-card__info
       h3.product-card__title
-        a(href="") #{product.title}
+        a.product-card__title-link(href="") #{product.title}
       p.product-card__description #{product.description}
-      a.product-card__price(href="") #{product.price}
+      a.product-card__price.button.button--red(href="") #{product.price}
 
 .products__list-wrapper
   ul.products__list.products-list
     each product in productsObj
       +list-item(product)
   ul.products__pagination.pagination
-    li.pagination__item 1
-    li.pagination__item 2
-    li.pagination__item 3
-    li.pagination__item Следующая
+    li.pagination__item
+      a.pagination__link.button.button--gray 1
+    li.pagination__item
+      a.pagination__link.button.button--gray 2
+    li.pagination__item
+      a.pagination__link.button.button--gray 3
+    li.pagination__item
+      a.pagination__link.button.button--gray Следующая

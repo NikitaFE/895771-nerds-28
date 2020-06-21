@@ -1,14 +1,14 @@
 extends common/layout
 
 block variables
-  -var page = 'Каталог'
+  -var page = {title: 'Каталог', name: 'catalog'}
 
 block content
     main.catalog
       .catalog__top
         .catalog__top-container.container
           h1.catalog__title Магазин готовых шаблонов
-      .catalog__grid
+      .catalog__grid.container
         include includes/catalog/filter
 
         section.products

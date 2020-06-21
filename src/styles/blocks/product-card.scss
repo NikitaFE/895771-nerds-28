@@ -1,0 +1,21 @@
+.product-card__info {
+  background-color: $bg-gray;
+}
+
+.product-card__title {
+  margin: 0;
+  padding: 0;
+}
+
+.product-card__title-link {
+  @include font-sans("b", 18px, 30px, $black);
+
+  text-transform: uppercase;
+}
+
+.product-card__description {
+  @include font-sans('r', 16px, 18px, $gray);
+
+  margin: 0;
+  padding: 0;
+}
