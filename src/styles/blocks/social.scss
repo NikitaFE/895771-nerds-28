@@ -1,3 +1,25 @@
+.social__container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 69px 0;
+}
+
+.social__list {
+  @include reset-list;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 11px;
+  row-gap: 9px;
+  margin-left: 1px;
+  margin-right: 140px;
+}
+
 .social__link {
+  display: block;
+  width: 79px;
+  height: 79px;
+
   background-color: $social-gray;
+  border-radius: 50%;
 }

@@ -1,7 +1,28 @@
+.service__img {
+  width: 300px;
+  height: 146px;
+  margin-bottom: 25px;
+
+  background-repeat: no-repeat;
+
+  &--red {
+    background-image: url("../img/service-1.png");
+  }
+
+  &--green {
+    background-image: url("../img/service-2.png");
+  }
+
+  &--yellow {
+    background-image: url("../img/service-3.png");
+  }
+}
+
 .service__title {
   @include font-sans("b", 24px, 30px, $black);
 
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
 
   text-transform: uppercase;
@@ -10,6 +31,12 @@
 .service__text {
   @include font-sans("r", 16px, 24px, $dark);
 
+  width: 260px;
   margin: 0;
+  margin-bottom: 33px;
   padding: 0;
+}
+
+.service__link {
+  width: 160px;
 }

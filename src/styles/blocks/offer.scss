@@ -1,7 +1,13 @@
+.offer {
+  width: 660px;
+  padding-top: 6px;
+}
+
 .offer__text-bold {
   @include font-sans("b", 36px, 36px, $black);
 
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 }
 

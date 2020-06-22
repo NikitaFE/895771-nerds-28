@@ -1,3 +1,19 @@
 .hero {
   background-color: $bg-gray;
 }
+
+.hero__container {
+  padding: 78px 0 80px;
+}
+
+.hero__slide {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.hero__controls {
+  display: none;
+}

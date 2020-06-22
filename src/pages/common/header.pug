@@ -1,14 +1,19 @@
+- var links = [{name: "Студия", href: "studio"}, {name: "Клиенты", href: "clients"}, {name: "Магазин", href: "catalog"}, {name: "Контакты", href: "contacts"}];
+
+mixin nav-link(page, link)
+  li.main-menu__item
+    if page.name == link.href
+      a.main-menu__link.main-menu__link--active= link.name
+    else
+      a.main-menu__link(href=(link.href) + ".html")= link.name
+
+
 header.header
   nav.header__nav.container
-    a.header__logo(class="logo" href="#")
-      img(class="logo__img" src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип магазина 'Нёрдс'")
+    a.header__logo.logo(href=(page.name == "index" ? undefined : "index.html"))
+      img.logo__img(src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип магазина 'Нёрдс'")
     ul.header__menu.main-menu
-      li.main-menu__item
-        a.main-menu__link(href="studio.html" class=(page.name === "studio" ? "main-menu__link--active" : undefined)) Студия
-      li.main-menu__item
-        a.main-menu__link(href="clients.html" class=(page.name === "clients" ? "main-menu__link--active" : undefined)) Клиенты
-      li.main-menu__item
-        a.main-menu__link(href="catalog.html" class=(page.name === "catalog" ? "main-menu__link--active" : undefined)) Магазин
-      li.main-menu__item
-        a.main-menu__link(href="contacts.html" class=(page.name === "contacts" ? "main-menu__link--active" : undefined)) Контакты
-    a.header__button(href="cart.html") Корзина
+      each link in links
+        +nav-link(page, link)
+    .header__button-wrapper
+      a.header__button(href="cart.html") Корзина

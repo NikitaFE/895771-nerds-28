@@ -1,7 +1,13 @@
+.about-us {
+  width: 650px;
+  padding-top: 76px;
+}
+
 .about-us__title {
   @include font-sans("m", 45px, 45px, $black);
 
   margin: 0;
+  margin-bottom: 33px;
   padding: 0;
 }
 
@@ -9,5 +15,6 @@
   @include font-sans("r", 16px, 24px, $dark);
 
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 }

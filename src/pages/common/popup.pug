@@ -3,15 +3,15 @@ section.popup
     h2.popup__title Напишите нам
     form.popup__form(action="#")
       .popup__form-top
-        p.popup__filed-wrapper
+        p.popup__field-wrapper
           label.popup__label(for="user-name") Ваше имя:
           input.popup__input(id="user-name" type="text" name="name" placeholder="Имя Фамилия")
-        p.popup__filed-wrapper
+        p.popup__field-wrapper
           label.popup__label(for="user-email") Ваш email:
           input.popup__input(id="user-email" type="email" name="email" placeholder="email@example.com")
-        p.popup__filed-wrapper
-          label.popup__label(for="user-msg") Текст письма:
-          textarea.popup__input.popup__input--textarea(id="user-msg" name="msg" placeholder="В свободной форме")
-      button.popup__submit(type="submit") Отправить
+      p.popup__field-wrapper
+        label.popup__label(for="user-msg") Текст письма:
+        textarea.popup__input.popup__input--textarea(id="user-msg" name="msg" placeholder="В свободной форме")
+      button.popup__submit.button.button--red(type="submit") Отправить
       button.popup__close(type="button")
         span.visually-hidden Закрыть.

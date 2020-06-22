@@ -1,3 +1,32 @@
+.partners {
+  @include section-underline;
+
+  margin-bottom: 82px;
+}
+
+.partners__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .partners__list {
   @include reset-list;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 37px;
+}
+
+.partners__item {
+  text-align: center;
+
+  &:first-child {
+    padding-top: 12px;
+  }
+
+  &:last-child {
+    padding-top: 5px;
+  }
 }

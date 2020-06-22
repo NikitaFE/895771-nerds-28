@@ -1,3 +1,10 @@
 .services__list {
   @include reset-list;
+  @include section-underline;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  row-gap: 30px;
+  padding: 80px 60px 80px 0;
 }

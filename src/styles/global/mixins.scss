@@ -11,6 +11,32 @@
 
   border: none;
 }
+
+@mixin section-underline {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+
+    width: 1158px;
+    height: 2px;
+
+    background-color: $bg-gray;
+
+    transform: translateX(-50%);
+  }
+}
+
+@mixin input-placeholder {
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
 // font options
 @mixin font-sans($font-family: false, $size: false, $lh: false, $colour: false) {
   @if ($font-family == "m") {

@@ -1,14 +1,21 @@
 .hero-text__title {
   @include font-sans("m", 55px, 55px, $black);
 
+  width: 520px;
   margin: 0;
+  margin-bottom: 26px;
   padding: 0;
 }
 
 .hero-text__subtitle {
   @include font-sans("r", 16px, 24px, $dark);
 
+  width: 400px;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 }
 
+.hero-text__button {
+  min-width: 240px;
+}

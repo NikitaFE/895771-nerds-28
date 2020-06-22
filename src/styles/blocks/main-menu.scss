@@ -1,5 +1,24 @@
 .main-menu {
   @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+  margin: 0 -22px;
+  padding-top: 26px;
+}
+
+.main-menu__item {
+  margin: 0 22px;
+
+  &:nth-child(2) {
+    margin-right: 24px;
+  }
+
+  &:nth-child(3) {
+    margin-left: 24px;
+  }
 }
 
 .main-menu__link {

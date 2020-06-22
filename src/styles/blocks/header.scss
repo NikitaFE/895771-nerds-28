@@ -1,3 +1,21 @@
+.header {
+  background-color: $bg-gray;
+}
+
+.header__nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding-top: 49px;
+}
+
+.header__button-wrapper {
+  justify-self: end;
+  width: 150px;
+  padding-top: 26px;
+
+  text-align: right;
+}
+
 .header__button {
   @include font-sans("m", 16px, 30px, $black);
 

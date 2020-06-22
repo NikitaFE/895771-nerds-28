@@ -1,0 +1,6 @@
+.index__grid {
+  @include section-underline;
+
+  display: flex;
+  justify-content: space-between;
+}
