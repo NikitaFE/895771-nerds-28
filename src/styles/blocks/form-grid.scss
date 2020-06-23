@@ -1,15 +1,27 @@
 .form-grid {
   @include reset-fieldset;
+
+  margin-bottom: 44px;
 }
 
 .form-grid__title {
   @include font-sans("b", 18px, 30px, $black);
+
+  margin-bottom: 14px;
 
   text-transform: uppercase;
 }
 
 .form-grid__list {
   @include reset-list;
+}
+
+.form-grid__item {
+  padding-left: 36px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .form-grid__label {

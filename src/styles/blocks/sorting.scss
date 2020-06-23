@@ -1,3 +1,9 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
 .sorting__title {
   @include font-sans("b", 18px, 30px, $black);
 
@@ -7,8 +13,22 @@
   text-transform: uppercase;
 }
 
+.sorting__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: -2px;
+}
+
 .sorting__list {
   @include reset-list;
+
+  display: flex;
+  margin-left: -26px;
+  margin-right: 47px;
+}
+
+.sorting__item {
+  margin-left: 26px;
 }
 
 .sorting__link {
@@ -20,5 +40,21 @@
 
   &--active {
     opacity: 1;
+  }
+}
+
+.sorting__types {
+  display: flex;
+}
+
+.sorting__type {
+  display: block;
+  width: 11px;
+  height: 10px;
+
+  background-color: $black;
+
+  &:first-child {
+    margin-right: 19px;
   }
 }

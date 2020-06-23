@@ -1,50 +1,51 @@
 section.filter
   h2.visually-hidden Фильтр товаров
 
-  form.filter__form.main-form(action="https://echo.htmlacademy.ru/")
-    fieldset.main-form__cost.form-cost
+  form.filter__form(action="https://echo.htmlacademy.ru/")
+    fieldset.filter__form-cost.form-cost
       legend.form-cost__title Стоимость:
       .form-cost__range-wrapper
-        .form-cost__handle
-        .form-cost__handle
         .form-cost__range
+          .form-cost__handle
+          .form-cost__handle
+          .form-cost__range-line
       .form-cost__inputs
-        p
-          label(for="min") От
-          input#min(type="number" name="min")
-        p
-          label(for="max") До
-          input#max(type="number" name="max")
-    fieldset.main-form__grid.form-grid
+        p.form-cost__value
+          label.form-cost__label(for="min") От
+          input#min.form-cost__input(type="text" name="min" value="0")
+        p.form-cost__value
+          label.form-cost__label(for="max") До
+          input#max.form-cost__input(type="text" name="max" value="15 000")
+    fieldset.filter__form-grid.form-grid
       legend.form-grid__title Сетка:
       ul.form-grid__list
         li.form-grid__item
-          input#adaptive.form-grid__input(type="radio" name="grid" checked)
+          input#adaptive.visually-hidden(type="radio" name="grid" checked)
           label.form-grid__label(for="adaptive") Адаптивная
         li.form-grid__item
-          input#fixed.form-grid__input(type="radio" name="grid")
+          input#fixed.visually-hidden(type="radio" name="grid")
           label.form-grid__label(for="fixed") Фиксированная
         li.form-grid__item
-          input#responsive.form-grid__input(type="radio" name="grid")
+          input#responsive.visually-hidden(type="radio" name="grid")
           label.form-grid__label(for="responsive") Резиновая
-    fieldset.main-form__features.form-features
+    fieldset.filter__form-features.form-features
       legend.form-features__title Особенности:
       ul.form-features__list
         li.form-features__item
-          input#slider(type="checkbox" name="slider" checked)
-          label(for="slider") Адаптивная
+          input#slider.visually-hidden(type="checkbox" name="slider" checked)
+          label(for="slider") Слайдер
         li.form-features__item
-          input#advantages(type="checkbox" name="advantages")
-          label(for="advantages") Фиксированная
+          input#advantages.visually-hidden(type="checkbox" name="advantages")
+          label(for="advantages") Блок преимуществ
         li.form-features__item
-          input#news(type="checkbox" name="news" checked)
-          label(for="news") Резиновая
+          input#news.visually-hidden(type="checkbox" name="news" checked)
+          label(for="news") Новости
         li.form-features__item
-          input#gallery(type="checkbox" name="gallery")
-          label(for="gallery") Фиксированная
+          input#gallery.visually-hidden(type="checkbox" name="gallery")
+          label(for="gallery") Галерея
         li.form-features__item
-          input#cart(type="checkbox" name="cart")
-          label(for="cart") Резиновая
+          input#cart.visually-hidden(type="checkbox" name="cart")
+          label(for="cart") Корзина
 
-    button.main-form__submit.button.button--gray(type="submit") Показать
+    button.filter__form-submit.button.button--gray(type="submit") Показать
 

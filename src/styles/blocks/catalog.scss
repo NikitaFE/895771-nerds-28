@@ -1,5 +1,13 @@
 .catalog__top {
+  margin-bottom: 55px;
+
   background-color: $bg-gray;
+}
+
+.catalog__top-container {
+  padding: 78px 100px 109px 83px;
+
+  text-align: center;
 }
 
 .catalog__title {
@@ -7,4 +15,9 @@
 
   margin: 0;
   padding: 0;
+}
+
+.catalog__grid {
+  display: flex;
+  justify-content: space-between;
 }

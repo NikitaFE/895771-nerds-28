@@ -1,9 +1,74 @@
 .form-cost {
   @include reset-fieldset;
+
+  margin-bottom: 54px;
 }
 
 .form-cost__title {
   @include font-sans("b", 18px, 30px, $black);
 
+  margin-bottom: 48px;
+
   text-transform: uppercase;
+}
+
+.form-cost__range-wrapper {
+  position: relative;
+
+  width: 260px;
+  height: 80px;
+  margin-bottom: 14px;
+  padding: 39px 22px;
+
+  background-color: $bg-gray;
+  border-radius: 3px;
+}
+
+.form-cost__range {
+  height: 2px;
+
+  background-color: $border-gray;
+}
+
+.form-cost__range-line {
+  width: 67%;
+  height: 2px;
+
+  background-color: $green;
+}
+
+.form-cost__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-cost__value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.form-cost__label {
+  @include font-sans("r", 16px, 22px, $dark);
+
+  margin-right: 12px;
+
+  text-transform: uppercase;
+}
+
+.form-cost__input {
+  @include font-sans("r", 16px, 22px, $dark);
+
+  width: 80px;
+  height: 38px;
+  padding: 8px;
+
+  text-align: center;
+
+  background-color: $bg-gray;
+  border: none;
+  border-radius: 3px;
 }

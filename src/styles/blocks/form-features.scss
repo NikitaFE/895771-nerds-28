@@ -1,15 +1,27 @@
 .form-features {
   @include reset-fieldset;
+
+  margin-bottom: 48px;
 }
 
 .form-features__title {
   @include font-sans("b", 18px, 30px, $black);
+
+  margin-bottom: 13px;
 
   text-transform: uppercase;
 }
 
 .form-features__list {
   @include reset-list;
+}
+
+.form-features__item {
+  padding-left: 36px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .form-features__label {
