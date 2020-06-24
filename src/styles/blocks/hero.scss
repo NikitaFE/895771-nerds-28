@@ -2,16 +2,44 @@
   background-color: $bg-gray;
 }
 
-.hero__container {
-  padding: 78px 0 80px;
-}
-
 .hero__slide {
+  position: relative;
+
   display: none;
 
   &--active {
     display: block;
   }
+
+  &:nth-child(1) {
+    .hero__deco {
+      background-image: url("../img/slide-1.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(2) {
+    .hero__deco {
+      background-image: url("../img/slide-2.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-child(3) {
+    .hero__deco {
+      background-image: url("../img/slide-3.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.hero__deco {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 760px;
+  height: 431px;
 }
 
 .hero__controls {

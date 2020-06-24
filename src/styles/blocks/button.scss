@@ -10,27 +10,69 @@
   border: none;
   border-radius: 3px;
 
+  transition: all 0.3s;
+
+  &:active {
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  }
+
   &--red {
     @include font-sans("m", 16px, 18px, $white);
 
     background-color: $red;
+
+    &:hover,
+    &:focus {
+      background-color: $red-hover;
+    }
+
+    &:active {
+      background-color: $red-active;
+    }
   }
 
   &--green {
     @include font-sans("m", 16px, 18px, $white);
 
     background-color: $green;
+
+    &:hover,
+    &:focus {
+      background-color: $green-hover;
+    }
+
+    &:active {
+      background-color: $green-active;
+    }
   }
 
   &--yellow {
     @include font-sans("m", 16px, 18px, $white);
 
     background-color: $yellow;
+
+    &:hover,
+    &:focus {
+      background-color: $yellow-hover;
+    }
+
+    &:active {
+      background-color: $yellow-active;
+    }
   }
 
   &--gray {
     @include font-sans("m", 16px, 18px, $black);
 
     background-color: $bg-gray;
+
+    &:hover,
+    &:focus {
+      background-color: $gray-hover;
+    }
+
+    &:active {
+      background-color: $gray-active;
+    }
   }
 }

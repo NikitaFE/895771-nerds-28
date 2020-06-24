@@ -17,6 +17,22 @@
 .abilities__item {
   @include font-sans("r", 16px, 24px, $dark);
 
+  position: relative;
+
   margin-bottom: 24px;
   padding-left: 36px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: $red;
+
+    transform: translateY(-50%);
+  }
 }

@@ -19,5 +19,47 @@
 .header__button {
   @include font-sans("m", 16px, 30px, $black);
 
+  position: relative;
+
+  padding-left: 40px;
+
   text-transform: uppercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    background-image: url("../img/svg/cart-icon.svg");
+
+    transform: translateY(-50%);
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $red;
+  }
+
+  &[href]:active {
+    color: $black;
+    opacity: 0.3;
+  }
+
+  &--active::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+
+    width: calc(100% - 2px);
+    height: 2px;
+
+    background-color: $red;
+
+    transform: translateX(-50%);
+  }
 }

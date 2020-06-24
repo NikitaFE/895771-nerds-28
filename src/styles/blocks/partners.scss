@@ -20,7 +20,23 @@
 }
 
 .partners__item {
+  position: relative;
+
   text-align: center;
+
+  &:not(:nth-child(4n))::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1px;
+
+    width: 2px;
+    height: 52px;
+
+    background-color: $bg-gray;
+
+    transform: translateY(-50%);
+  }
 
   &:first-child {
     padding-top: 12px;
@@ -28,5 +44,24 @@
 
   &:last-child {
     padding-top: 5px;
+  }
+
+  .partners__img {
+    opacity: 0.2;
+
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+    .partners__img {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .partners__img {
+      opacity: 0.1;
+    }
   }
 }
