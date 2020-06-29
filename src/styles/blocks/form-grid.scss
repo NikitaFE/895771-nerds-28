@@ -17,13 +17,56 @@
 }
 
 .form-grid__item {
-  padding-left: 36px;
-
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+
 }
 
 .form-grid__label {
   @include font-sans("r", 16px, 19px, $dark);
+
+  position: relative;
+  padding-left: 36px;
+
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../img/svg/radio-off.svg");
+    background-repeat: no-repeat;
+    opacity: 0.4;
+
+    transform: translateY(-50%);
+    transition: 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.form-grid__input {
+  &:checked ~ .form-grid__label::before {
+    background-image: url("../img/svg/radio-on.svg");
+  }
+
+  &:focus ~ .form-grid__label::before {
+    opacity: 1;
+  }
+
+  &:disabled ~ .form-grid__label {
+    color: $dark-30;
+
+    &::before {
+      opacity: 0.1;
+    }
+  }
 }

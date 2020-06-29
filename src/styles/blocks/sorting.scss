@@ -38,6 +38,12 @@
 
   opacity: 0.3;
 
+  transition: 0.3s;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
   &--active {
     opacity: 1;
   }
@@ -52,9 +58,27 @@
   width: 11px;
   height: 10px;
 
-  background-color: $black;
+  opacity: 0.3;
+
+  transition: 0.3s;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &--active {
+    opacity: 1;
+  }
 
   &:first-child {
     margin-right: 19px;
+
+    background-image: url("../img/svg/icon-down-dir.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:last-child {
+    background-image: url("../img/svg/icon-up-dir.svg");
+    background-repeat: no-repeat;
   }
 }

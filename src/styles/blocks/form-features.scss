@@ -17,8 +17,6 @@
 }
 
 .form-features__item {
-  padding-left: 36px;
-
   &:not(:last-child) {
     margin-bottom: 16px;
   }
@@ -26,4 +24,51 @@
 
 .form-features__label {
   @include font-sans("r", 16px, 19px, $dark);
+
+  position: relative;
+  padding-left: 36px;
+
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/svg/checkbox-off.svg");
+    background-repeat: no-repeat;
+    opacity: 0.4;
+
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+}
+
+.form-features__input {
+  &:checked ~ .form-features__label::before {
+    width: 26px;
+
+    background-image: url("../img/svg/checkbox-on.svg");
+  }
+
+  &:focus ~ .form-features__label::before {
+    opacity: 1;
+  }
+
+  &:disabled ~ .form-features__label {
+    color: $dark-30;
+
+    &::before {
+      opacity: 0.1;
+    }
+  }
 }

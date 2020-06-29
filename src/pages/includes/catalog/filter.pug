@@ -20,32 +20,32 @@ section.filter
       legend.form-grid__title Сетка:
       ul.form-grid__list
         li.form-grid__item
-          input#adaptive.visually-hidden(type="radio" name="grid" checked)
+          input#adaptive.form-grid__input.visually-hidden(type="radio" name="grid" checked)
           label.form-grid__label(for="adaptive") Адаптивная
         li.form-grid__item
-          input#fixed.visually-hidden(type="radio" name="grid")
+          input#fixed.form-grid__input.visually-hidden(type="radio" name="grid")
           label.form-grid__label(for="fixed") Фиксированная
         li.form-grid__item
-          input#responsive.visually-hidden(type="radio" name="grid")
+          input#responsive.form-grid__input.visually-hidden(type="radio" name="grid")
           label.form-grid__label(for="responsive") Резиновая
     fieldset.filter__form-features.form-features
       legend.form-features__title Особенности:
       ul.form-features__list
         li.form-features__item
-          input#slider.visually-hidden(type="checkbox" name="slider" checked)
-          label(for="slider") Слайдер
+          input#slider.form-features__input.visually-hidden(type="checkbox" name="slider" checked)
+          label.form-features__label(for="slider") Слайдер
         li.form-features__item
-          input#advantages.visually-hidden(type="checkbox" name="advantages")
-          label(for="advantages") Блок преимуществ
+          input#advantages.form-features__input.visually-hidden(type="checkbox" name="advantages")
+          label.form-features__label(for="advantages") Блок преимуществ
         li.form-features__item
-          input#news.visually-hidden(type="checkbox" name="news" checked)
-          label(for="news") Новости
+          input#news.form-features__input.visually-hidden(type="checkbox" name="news" checked)
+          label.form-features__label(for="news") Новости
         li.form-features__item
-          input#gallery.visually-hidden(type="checkbox" name="gallery")
-          label(for="gallery") Галерея
+          input#gallery.form-features__input.visually-hidden(type="checkbox" name="gallery")
+          label.form-features__label(for="gallery") Галерея
         li.form-features__item
-          input#cart.visually-hidden(type="checkbox" name="cart")
-          label(for="cart") Корзина
+          input#cart.form-features__input.visually-hidden(type="checkbox" name="cart")
+          label.form-features__label(for="cart") Корзина
 
     button.filter__form-submit.button.button--gray(type="submit") Показать
 
