@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Никита](https://up.htmlacademy.ru/htmlcss/28/user/895771).
-* Наставник: [Никитка](https://up.htmlacademy.ru/htmlcss/28/user/895771).
+* Наставник: [Никита](https://up.htmlacademy.ru/htmlcss/28/user/895771).
 
 ---
 
